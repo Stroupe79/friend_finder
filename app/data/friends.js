@@ -1,7 +1,5 @@
-You should save your application's data inside of `app/data/friends.js` as an array of objects. Each of these objects should roughly follow the format below.
 
-```json
-{
+var userList = [{
   "name":"Ahmed",
   "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
   "scores":[
@@ -16,5 +14,25 @@ You should save your application's data inside of `app/data/friends.js` as an ar
       4,
       1
     ]
+},{
+  "name":"Chris",
+  "photo":"https://media.licdn.com/dms/image/C4E03AQEkol_IEgkHgA/profile-displayphoto-shrink_200_200/0?e=1564012800&v=beta&t=37YAVDSip7mWCXsrHE2ia5gICM12bvBG5SlF95ZxpFw",
+  "scores":[
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5
+  ]
+
 }
-```
+];
+
+
+
+module.exports = userList;

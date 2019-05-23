@@ -4,11 +4,12 @@ const path = require("path")
 const mysql = require ("mysql");
 
 var app = express();
+
 // require("./app/routing/apiRoutes.js")(app);
 require("./app/routing/htmlRoutes.js")(app);
-
 var PORT = process.env.PORT || 3000;
 
+app.use(express.static(__dirname + '/public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 

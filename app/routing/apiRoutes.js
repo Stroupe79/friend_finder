@@ -1,10 +1,10 @@
-// * A GET route with the url `/api/friends`. This will be used to display a JSON of all possible friends.
-//    * A POST routes `/api/friends`. This will be used to handle incoming survey results. This route will also be used to handle the compatibility logic.
+const userList = require("../data/friends.js")
+const path = require("path");
 
 
-
-
-app.get("/", function(req, res) {
-   res.sendFile(path.join(__dirname, "./app/public/home.html"));
- });
+module.exports = function(app){  
+   app.get("/app/data/friends", function(req, res) {
+    res.json(userList);
+  });
+};
 
